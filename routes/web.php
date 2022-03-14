@@ -13,11 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::resource('posts', 'App\Http\Controllers\PostController');
+Route::get('/', 'App\Http\Controllers\PostController@index');
+Route::resource('/posts', 'App\Http\Controllers\PostController');
 
 //if (env('APP_ENV') === 'local') {
 //    URL::forceScheme('https');

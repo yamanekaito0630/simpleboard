@@ -46,7 +46,7 @@ class PostController extends Controller
         $post->content = $request->input('content');
         $post->save();
 
-        return redirect()->route('posts.show', $post)->with('message', 'Post was successfully created.');
+        return redirect()->route('posts.show', $post)->withSuccess('Post was successfully created.');
     }
 
     /**
@@ -89,7 +89,7 @@ class PostController extends Controller
         $post->content = $request->input('content');
         $post->save();
 
-        return redirect()->route('posts.show', $post)->with('message', 'Post was successfully updated.');
+        return redirect()->route('posts.show', $post)->withSuccess('Post was successfully updated.');
     }
 
     /**

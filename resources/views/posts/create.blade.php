@@ -26,7 +26,7 @@
             <label for="exampleInputPassword1">Content</label>
             <textarea class="form-control" name="content" value="{{ old('content') }}"></textarea>
         </div>
-        <button type="submit" class="btn btn-outline-primary">Submit</button>
+        <button type="submit" class="btn btn-outline-primary" style="margin-top: 10px;">Submit</button>
     </form>
 
     <a href="/posts">Back</a>
